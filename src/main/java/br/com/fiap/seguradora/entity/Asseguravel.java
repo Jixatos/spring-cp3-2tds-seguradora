@@ -16,6 +16,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Builder
 
+@Table(name = "TBL_ASSEGURAVEL")
 public class Asseguravel {
 
     @Id

@@ -6,7 +6,11 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
+import java.math.BigDecimal;
+
 public record ImovelRequest(
+
+        BigDecimal valor,
 
         @NotNull(message = "Descrição é um campo obrigatório")
         String descricao,
@@ -26,6 +30,8 @@ public record ImovelRequest(
         TipoSeguro tipo,
 
         @Valid
-        AbstractRequest endereco
+        EnderecoRequest endereco,
+
+        String matricula
 ) {
 }

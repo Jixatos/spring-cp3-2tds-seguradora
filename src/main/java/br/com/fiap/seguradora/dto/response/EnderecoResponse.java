@@ -6,8 +6,8 @@ import lombok.Builder;
 public record EnderecoResponse(
         Long id,
         String logradouro,
-        String numero,
         String complemento,
+        String numero,
         String cep
 ) {
 }

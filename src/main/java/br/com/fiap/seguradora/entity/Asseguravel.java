@@ -1,21 +1,17 @@
 package br.com.fiap.seguradora.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 
-@Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@DiscriminatorColumn(name = "TYPE")
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 
+@Entity
 @Table(name = "TBL_ASSEGURAVEL")
 public class Asseguravel {
 

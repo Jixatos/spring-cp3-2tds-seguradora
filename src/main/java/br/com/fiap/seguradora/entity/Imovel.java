@@ -7,9 +7,10 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 @Data
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 
 @Entity
 @Table(name = "TBL_IMOVEL", uniqueConstraints = {

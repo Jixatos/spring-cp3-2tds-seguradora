@@ -1,14 +1,22 @@
 package br.com.fiap.seguradora.dto.response;
 
 import br.com.fiap.seguradora.entity.Asseguravel;
+import br.com.fiap.seguradora.entity.Foto;
 import lombok.Builder;
+
+import java.math.BigDecimal;
+import java.util.Collection;
 
 @Builder
 public record ImovelResponse(
+        BigDecimal valor,
+        Integer banheiros,
         String descricao,
-        Float metrosQuadrados,
-        Integer quartos,
         Integer vagasGaragem,
-        String matricula
+        Integer quartos,
+        Collection<Foto> fotos,
+        EnderecoResponse endereco,
+        Long id,
+        Float metroQuadrados
 ) {
 }

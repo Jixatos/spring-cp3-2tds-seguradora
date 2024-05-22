@@ -1,12 +1,15 @@
 package br.com.fiap.seguradora.dto.request;
 
-import br.com.fiap.seguradora.entity.TipoSeguro;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.PastOrPresent;
 
+import java.math.BigDecimal;
 import java.time.Year;
 
 public record VeiculoRequest(
+
+        @NotNull(message = "Chassis é um campo obrigatório")
+        String chassis,
 
         @NotNull(message = "Placa é um campo obrigatório")
         String placa,
@@ -20,6 +23,6 @@ public record VeiculoRequest(
         @PastOrPresent
         Year ano,
 
-        TipoSeguro tipo
+        BigDecimal valor
 ) {
 }

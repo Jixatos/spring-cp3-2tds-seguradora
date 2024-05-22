@@ -32,7 +32,7 @@ public record PessoaRequest(
         TipoPessoa tipo,
 
         @Valid
-        AbstractRequest documento
+        DocumentoRequest documento
 
 ) {
 }

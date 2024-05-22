@@ -21,5 +21,6 @@ public class Foto {
     @Column(name = "ID_FOTO")
     private Long id;
 
+    @Column(name = "SRC")
     private String src;
 }

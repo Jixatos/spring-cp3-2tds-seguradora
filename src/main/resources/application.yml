@@ -14,5 +14,3 @@ spring:
   # Development properties (also used for docker-compose)
   config:
     import: optional:file:.env[.properties]
-
-

@@ -9,11 +9,13 @@ import br.com.fiap.seguradora.entity.Pessoa;
 import br.com.fiap.seguradora.repository.PessoaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.Objects;
 import java.util.Optional;
 
+@Service
 public class PessoaService implements ServiceDTO<Pessoa, PessoaRequest, PessoaResponse> {
     @Autowired
     private PessoaRepository repo;

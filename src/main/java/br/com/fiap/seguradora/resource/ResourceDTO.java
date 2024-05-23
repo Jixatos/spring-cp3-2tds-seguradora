@@ -10,5 +10,4 @@ public interface ResourceDTO<Request, Response> {
 
     ResponseEntity<Response> save(Request r);
 
-
 }

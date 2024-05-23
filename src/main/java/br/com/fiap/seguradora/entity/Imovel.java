@@ -20,8 +20,8 @@ public class Imovel extends Asseguravel {
 
     private String descricao;
 
-    @Column(name = "METRO_QUADRADOS")
-    private Float metroQuadrados;
+    @Column(name = "METROS_QUADRADOS")
+    private Float metrosQuadrados;
 
     private Integer quartos;
 

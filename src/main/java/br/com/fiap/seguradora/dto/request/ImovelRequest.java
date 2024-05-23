@@ -16,7 +16,7 @@ public record ImovelRequest(
         String descricao,
 
         @Positive
-        Float metroQuadrados,
+        Float metrosQuadrados,
 
         @Positive
         Integer quartos,

@@ -11,7 +11,7 @@ import java.util.Set;
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@Builder()
 
 @Entity
 @Table(name = "TBL_VEICULO", uniqueConstraints = {

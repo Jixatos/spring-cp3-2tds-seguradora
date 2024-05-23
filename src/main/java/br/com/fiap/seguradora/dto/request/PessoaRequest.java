@@ -26,9 +26,6 @@ public record PessoaRequest(
         @PastOrPresent
         LocalDate nascimento,
 
-        @Valid
-        AbstractRequest endereco,
-
         TipoPessoa tipo,
 
         @Valid

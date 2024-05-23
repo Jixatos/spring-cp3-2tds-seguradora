@@ -24,5 +24,6 @@ public record VeiculoRequest(
         Year ano,
 
         BigDecimal valor
+
 ) {
 }

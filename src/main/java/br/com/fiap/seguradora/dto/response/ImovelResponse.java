@@ -17,6 +17,6 @@ public record ImovelResponse(
         Collection<Foto> fotos,
         EnderecoResponse endereco,
         Long id,
-        Float metroQuadrados
+        Float metrosQuadrados
 ) {
 }
